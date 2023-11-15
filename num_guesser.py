@@ -26,7 +26,7 @@ random_number = random.randint(0, top_of_range)
 #///////
 #  User plays the game making a guess and its being compared to the Target number.
 #///////
-num_of_guesses = 0
+num_of_guesses = 1
 
 while True:
     user_guess = input('Make a guess: ')
@@ -42,11 +42,15 @@ while True:
 
     if user_guess == random_number:
         print('You got it correct!')
-        print('It took you: ' + str(num_of_guesses) + ' guesses!')
+        print('It took you: ' + str(num_of_guesses) + ' try!')
         break
     else:
         # ADD a case where it tells you if you are lower or higher
         print('You got it wrong!')
+        if user_guess < random_number:
+            print('The number is higher')
+        else:
+            print('The number is lower')
         num_of_guesses += 1
 
 #
