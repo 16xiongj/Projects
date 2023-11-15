@@ -42,11 +42,30 @@ while True:
 
     if user_guess == random_number:
         print('You got it correct!')
-        print('It took you: ' + str(num_of_guesses))
-        break()
+        print('It took you: ' + str(num_of_guesses) + ' guesses!')
+        break
     else:
+        # ADD a case where it tells you if you are lower or higher
         print('You got it wrong!')
         num_of_guesses += 1
-    
-def play_again():
-    pass
+
+#
+#  Gives the option to play again and resets the game.
+#  **Add the play again option
+#
+
+# def play_again():
+#     while True:
+#         user_answer = input('Do you want to play again?(Y/N) ').upper()
+
+#         if user_answer.isalpha():
+#             if user_answer == 'Y':
+#                 main()                                # will need to make the main program a def
+#             else if user_answer == 'N':
+#                 print('Thanks for playing!')
+#                 break()
+#             else:
+#                 print()
+                
+
+
