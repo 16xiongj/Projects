@@ -4,6 +4,7 @@ user_wins = 0
 computer_wins = 0
 draws = 0
 
+#  Rock = 0, Paper = 1, Scissor = 2
 options = ["rock", "paper", "scissor"]
 
 while True:
