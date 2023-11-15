@@ -48,3 +48,5 @@ while True:
         print('You got it wrong!')
         num_of_guesses += 1
     
+def play_again():
+    pass
